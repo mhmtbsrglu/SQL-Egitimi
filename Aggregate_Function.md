@@ -28,3 +28,16 @@ SQL'deki AGGREGATE fonksiyonu, bir veri kümesinin özet istatistiklerini veya t
     GROUP BY kategori;
 
     ```
+
+```sql
+SELECT * FROM public.products
+ORDER BY product_id ASC 
+
+
+/*
+PRUDCT_NAME VE STOK ENVANTERINI PRODUCT TABLOSUNDAN AL VE HESAPLA
+NEYE GÖRE GRUPLA PRODUCT ADINA GÖRE HER BİRİNİ GRUPLA VE TEKİL ENVANTER SAYISINI DÖN.
+*/
+SELECT product_name as ürün_adı, sum(units_in_stock) as stok FROM products group by product_name
+order by product_name ASC
+```
