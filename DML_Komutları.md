@@ -26,3 +26,4 @@ update categories SET description='phone,computer, iot'  where category_name = '
 - Distinct: Sorgu sonucunun tekil olmasını sağlar.
 - Order By: Sıralama sorgusudur
 - TOP: Sorgu sonucu verilerin bir kısmının gelmesini sağlar.
+- AS: (Alias) istediğimiz şekilde kolon adlarını görme imkanı sunar.
