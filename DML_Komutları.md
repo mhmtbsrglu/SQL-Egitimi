@@ -27,3 +27,18 @@ update categories SET description='phone,computer, iot'  where category_name = '
 - Order By: Sıralama sorgusudur
 - TOP: Sorgu sonucu verilerin bir kısmının gelmesini sağlar.
 - AS: (Alias) istediğimiz şekilde kolon adlarını görme imkanı sunar.
+
+```sql
+select DISTINCT categorY_id,category_name,description from categories where category_name != 'Beverages'
+
+/*
+order by = Sırala
+DESC = Sondan Başa doğru
+ASC = Baştan Sona Doğru
+*/
+select DISTINCT categorY_id,category_name,description from categories ORDER BY category_id DESC
+
+SELECT product_id AS Ürün_No, * FROM public.products
+ORDER BY product_id ASC 
+
+```
